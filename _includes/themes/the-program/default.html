@@ -20,13 +20,20 @@
 			<div class="unit-inner unit-head-inner">
 				<nav class="nav-global">
 					<ul>
-						<li class="logo"><a href="/">{{ site.title }}</a></li>
-						<li class="archive"><a href="/archive.html">archive</a></li>
-						<li class="page"><a href="/pages.html">pages</a></li>
-						<li class="category"><a href="/categories.html">categories</a></li>
-						<li class="tag"><a href="/tags.html">tags</a></li>
-						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
-									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+						<li class="logo"><a href="/" 
+                        title="蒋国宝de博客">{{ site.title }}</a></li>
+						<li class="archive"><a href="/archive.html"
+						title="所有博文归档">archive</a></li>
+						<li class="page"><a href="/pages.html" 
+                        title="页面信息">pages</a></li>
+						<li class="category"><a href="/categories.html"
+						title="归类信息">categories</a></li>
+						<li class="tag"><a href="/tags.html" 
+                       title="标签信息">tags</a></li>
+						<li class="link"><a href="/aborn/md/uselink.html"
+						title="非常有用的链接">links</a></li>
+						<li class="books"><a href="/aborn/md/BookLists.html"
+						title="我曾经阅读过的书">books</a></li>
 					</ul>
 				</nav>
 			</div><!-- unit-inner -->
@@ -47,16 +54,25 @@
 				<div class="misc vcard">
 					<h4>about</h4>
 					<ul>
+<p class="logo">
+<a href="/aborn/md/about.html" title="AboutMe--我的简历"><img src="/aborn/img/me.jpg" width="85"
+                                    height="85"/><a/>
+</p>
+
 						<li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
-						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
-						<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
-						<li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedname }}">Subscribe to RSS Feed</a></li>
+						<li class="github"><a target="_blank" href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
+						<li class="twitter"><a target="_blank" href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>		
+						<li class="csdn"><a target="_blank" href="http://blog.csdn.net/{{ site.author.twitter }}/" rel="me">blog.csdn.net/{{ site.author.csdn }}</a></li>
+						<li class="rss"><a target="_blank" href="http://feeds.feedburner.com/{{ site.author.feedname }}">Subscribe to RSS Feed</a></li>
 					</ul>
 				</div><!-- misc -->
 				<p class="licence">
-					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
+					Theme: <a href="https://github.com/jekyllbootstrap/theme-the-program">the-program</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
 					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
 				</p>
+<p>
+Last update time : {{ site.lasttime }}
+</p>
 			</div><!-- unit-foot-inner -->
 		</div><!-- unit-foot -->
 	</footer>
