@@ -18,6 +18,6 @@ frameout _include/theme/themename/default.html
 1. please note the *** in blog.
 2. reponame aborn.github.io
 3. modify _include/JB/posts_collate for archive.html
-
+4. add index.md in top
 
 
