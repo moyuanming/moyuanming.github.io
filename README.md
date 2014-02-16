@@ -2,9 +2,9 @@ aborn.github.io
 ==========
 
 ## INTRO
-This project is my blog's all source code and posts, which uses
-Jekyll-Bootstrap. For more info about Jekyll-Bootstrap please see:
-<http://jekyllbootstrap.com>
+This project is [my blog's](http://aborn.github.io) all source code
+and posts, which uses Jekyll-Bootstrap. For more infomation about
+Jekyll-Bootstrap, please see:<http://jekyllbootstrap.com>
 
 ## STRUCT
 * folder aborn some source files, like images, md, pdf etc.
@@ -13,7 +13,7 @@ Jekyll-Bootstrap. For more info about Jekyll-Bootstrap please see:
 
 ## INSTALL THEME
 * $ rake theme:install
-  git="https://github.com/jekyllbootstrap/theme-the-program.git"
+git="https://github.com/jekyllbootstrap/theme-the-program.git"
 *  $ rake theme:install name="THEME-NAME"
 
 
