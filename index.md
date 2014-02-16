@@ -7,18 +7,6 @@ tagline: Supporting tagline
 
 <ul class="posts">
   {% for post in site.posts %}
-  
-    <!---
-    
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a
-  href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-     {% if post.content contains '<!--more-->' %}
-         {{ post.content | split:'<!--more-->' | first }}
-     {% else %}
-         {{ post.content }}
-     {% endif %}
-  -->
-  
   	<div class="post">
 		<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		<p class="meta">Date: {{ post.date }}</p>
