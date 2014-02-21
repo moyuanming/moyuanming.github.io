@@ -25,13 +25,14 @@ comments: true
 ### 安装过程--Ubuntu
 #### 安装jemalloc
 安装命令如下:
-* sudo apt-get install libjemalloc1 libjemalloc-dev -y  
+
+* sudo apt-get install libjemalloc1 libjemalloc-dev -y
 
 #### 安装apr和apr-util
 apr和apr-util是两个依赖包，它们最新版本的下载地址[请点击][ref2]，下载
-好的以后，它的安装过程如下(配制，编译，安装):
-
+好的以后，它的安装过程如下(配制，编译，安装):  
 install apr
+
     cd apr-folder
     ./configure
     make
@@ -39,6 +40,7 @@ install apr
     sudo make install
 
 install apr-util
+
     ./configure --with-apr=/usr/local/apr
     make
     sudo make install
@@ -48,6 +50,7 @@ install apr-util
 #### 安装lib_mysqludf_json
 [lib_mysqludf_json][ref4]是一个支持json数据格式的UDF函数,它提供给mysql
 与redis进行数据交互。它的下载安装过程如下:
+
 * git clone https://github.com/mysqludf/lib_mysqludf_json.git
 * cp lib_mysqludf_json.so /usr/lib/mysql/plugin
 
