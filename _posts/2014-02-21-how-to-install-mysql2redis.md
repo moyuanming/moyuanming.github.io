@@ -31,17 +31,36 @@ apr和apr-util是两个依赖包，它们最新版本的下载地址[请点击][
 好的以后，它的安装过程如下(配制，编译，安装)：
 
 * install apr
-  1. cd apr-folder
-  2. ./configure
-  3. make
-  4. make test
-  5. sudo make install
+   1. cd apr-folder
+   2. ./configure
+   3. make
+   4. make test
+   5. sudo make install
 * install apr-util
-  1.  ./configure --with-apr=/usr/local/apr
-  2. make
-  3. sudo make install
-  
-[ref1]: https://github.com/aborn/mysql2redis "mysql2redis"
-[ref2]: http://apr.apache.org/download.cgi "apr and apr-utils download"
+  +.  ./configure --with-apr=/usr/local/apr
+  +. make
+  +. sudo make install
 
+#### 安装lib_mysqludf_json
+[lib_mysqludf_json][ref4]是一个支持json数据格式的UDF函数,它提供给mysql
+与redis进行数据交互。  
+它的下载安装过程如下：  
+* git clone https://github.com/mysqludf/lib_mysqludf_json.git
+* cp lib_mysqludf_json.so /usr/lib/mysql/plugin
+
+#### 安装hiredis
+[hiredis][ref3]是redis的一个调用接口，它提供了一些简单的redis的操作,它
+的安装和下载过程如下：
+
+* download git clone https://github.com/redis/hiredis.git
+* cd hiredis
+* make
+* sudo make install
+
+
+[ref1]: https://github.com/aborn/mysql2redis "mysql2redis"
+[ref2]: http://apr.apache.org/download.cgi "apr and apr-utils
+download"
+[ref3]: https://github.com/aborn/mysql2redis "hiredis github project"
+[ref4]: https://github.com/mysqludf/lib_mysqludf_json "json udf"
 
