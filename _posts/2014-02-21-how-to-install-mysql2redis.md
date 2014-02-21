@@ -6,7 +6,6 @@ tags: [mysql2redis, install]
 date: 2014-02-21 14:21
 comments: true
 ---
-{% include JB/setup %}
 
 ### 简介
 [mysql2redis][ref1] 是Mysql的一个UDF(user-defined function)函数,它提供
