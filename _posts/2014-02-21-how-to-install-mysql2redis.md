@@ -63,6 +63,14 @@ install apr-util
 * make
 * sudo make install
 
+#### 安装mysql2redis
+[mysql2redis][ref5]的安装和下载过程如下：
+
+* download git clone  https://github.com/aborn/mysql2redis.git
+* cd hiredis
+* make
+* sudo make install
+
 ### MYSQL的配制
 在mysql中定义如下
 
@@ -70,4 +78,4 @@ install apr-util
 [ref2]: http://apr.apache.org/download.cgi "apr and apr-utils download"
 [ref3]: https://github.com/aborn/mysql2redis "hiredis github project"
 [ref4]: https://github.com/mysqludf/lib_mysqludf_json "json udf"
-
+[ref5]: https://github.com/aborn/mysql2redis "mysql2redis"
