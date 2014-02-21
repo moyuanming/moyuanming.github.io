@@ -63,6 +63,8 @@ install apr-util
 * make
 * sudo make install
 
+### MYSQL的配制
+在mysql中定义如下
 
 [ref1]: https://github.com/aborn/mysql2redis "mysql2redis"
 [ref2]: http://apr.apache.org/download.cgi "apr and apr-utils download"
