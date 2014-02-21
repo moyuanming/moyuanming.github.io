@@ -102,5 +102,4 @@ install apr-util
 [ref3]: https://github.com/aborn/mysql2redis "hiredis github project"
 [ref4]: https://github.com/mysqludf/lib_mysqludf_json "json udf"
 [ref5]: https://github.com/aborn/mysql2redis "mysql2redis"
-[ref6]: https://github.com/aborn/popkit/blob/master/doc/mysql2redis.md
-"mysql2redis QA"
+[ref6]: https://github.com/aborn/popkit/blob/master/doc/mysql2redis.md "mysql2redis QA"
