@@ -16,10 +16,11 @@ comments: true
 安装mysql2redis前，先在系统里安装mysql, redis。
 
 ### 依赖
-1. jemalloc
-2. apr and apr-util
-3. hiredis
-4. lib_mysqludf_json
+
+*. jemalloc
+*. apr and apr-util
+*. hiredis
+*. lib_mysqludf_json
 
 ### 安装过程--Ubuntu
 #### 安装jemalloc
@@ -30,21 +31,18 @@ comments: true
 apr和apr-util是两个依赖包，它们最新版本的下载地址[请点击][ref2]，下载
 好的以后，它的安装过程如下(配制，编译，安装)：
 
-  * install apr
-      ```
-     cd apr-folder
-     ./configure
-     make
-     make test
-     sudo make install
-       ```
+##### install apr
+    cd apr-folder
+    ./configure
+    make  
+    make test  
+    sudo make install  
 
-  * install apr-util
-    ```
-    ./configure --with-apr=/usr/local/apr  
+##### install apr-util
+    ./configure --with-apr=/usr/local/apr
     make  
     sudo make install
-    ```
+
 
 
 #### 安装lib_mysqludf_json
@@ -64,8 +62,7 @@ apr和apr-util是两个依赖包，它们最新版本的下载地址[请点击][
 
 
 [ref1]: https://github.com/aborn/mysql2redis "mysql2redis"
-[ref2]: http://apr.apache.org/download.cgi "apr and apr-utils
-download"
+[ref2]: http://apr.apache.org/download.cgi "apr and apr-utils download"
 [ref3]: https://github.com/aborn/mysql2redis "hiredis github project"
 [ref4]: https://github.com/mysqludf/lib_mysqludf_json "json udf"
 
