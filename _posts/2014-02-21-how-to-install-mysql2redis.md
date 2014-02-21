@@ -17,30 +17,30 @@ comments: true
 
 ### 依赖
 
-*. jemalloc
-*. apr and apr-util
-*. hiredis
-*. lib_mysqludf_json
+* jemalloc
+* apr and apr-util
+* hiredis
+* lib_mysqludf_json
 
 ### 安装过程--Ubuntu
 #### 安装jemalloc
-安装命令如下:  
-> sudo apt-get install libjemalloc1 libjemalloc-dev -y  
+安装命令如下:
+* sudo apt-get install libjemalloc1 libjemalloc-dev -y  
 
 #### 安装apr和apr-util
 apr和apr-util是两个依赖包，它们最新版本的下载地址[请点击][ref2]，下载
-好的以后，它的安装过程如下(配制，编译，安装)：
+好的以后，它的安装过程如下(配制，编译，安装):
 
-##### install apr
+install apr
     cd apr-folder
     ./configure
-    make  
-    make test  
-    sudo make install  
+    make
+    make test
+    sudo make install
 
-##### install apr-util
+install apr-util
     ./configure --with-apr=/usr/local/apr
-    make  
+    make
     sudo make install
 
 
