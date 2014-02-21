@@ -67,15 +67,40 @@ install apr-util
 [mysql2redis][ref5]的安装和下载过程如下：
 
 * download git clone  https://github.com/aborn/mysql2redis.git
-* cd hiredis
+* cd mysql2redis
 * make
 * sudo make install
 
 ### MYSQL的配制
-在mysql中定义如下
+对于lib_mysqludf_json在mysql中执行以下sql命令:
+
+    DROP FUNCTION IF EXISTS json_members;
+    DROP FUNCTION IF EXISTS json_array;
+    DROP FUNCTION IF EXISTS json_object;
+    DROP FUNCTION IF EXISTS json_values;
+    CREATE FUNCTION json_members RETURNS STRING SONAME 'lib_mysqludf_json.so';
+    CREATE FUNCTION json_array RETURNS STRING SONAME 'lib_mysqludf_json.so';
+    CREATE FUNCTION json_object RETURNS STRING SONAME 'lib_mysqludf_json.so';
+    CREATE FUNCTION json_values RETURNS STRING SONAME 'lib_mysqludf_json.so';
+
+对于mysql2redis在mysql中执行以下sql命令:
+
+    DROP FUNCTION IF EXISTS json_members;
+    DROP FUNCTION IF EXISTS json_array;
+    DROP FUNCTION IF EXISTS json_object;
+    DROP FUNCTION IF EXISTS json_values;
+    CREATE FUNCTION json_members RETURNS STRING SONAME 'lib_mysqludf_json.so';
+    CREATE FUNCTION json_array RETURNS STRING SONAME 'lib_mysqludf_json.so';
+    CREATE FUNCTION json_object RETURNS STRING SONAME 'lib_mysqludf_json.so';
+    CREATE FUNCTION json_values RETURNS STRING SONAME 'lib_mysqludf_json.so';
+
+### [本文完]
+在安装过程中遇到的问题，请参照[mysql2redis.md][ref6]
 
 [ref1]: https://github.com/aborn/mysql2redis "mysql2redis"
 [ref2]: http://apr.apache.org/download.cgi "apr and apr-utils download"
 [ref3]: https://github.com/aborn/mysql2redis "hiredis github project"
 [ref4]: https://github.com/mysqludf/lib_mysqludf_json "json udf"
 [ref5]: https://github.com/aborn/mysql2redis "mysql2redis"
+[ref6]: https://github.com/aborn/popkit/blob/master/doc/mysql2redis.md
+"mysql2redis QA"
