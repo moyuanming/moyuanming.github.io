@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "rails 学习 "
+date:   2014-10-08 09:28:51
+categories: wiki
+---
+
+## gen 用法
+###scaffold(脚手架)
+```rails
+rails g scaffold post name:string title:string content:text
+```
+
+  scaffold 用于创建一个资源，对应的数据库表的脚本和对应CRUD的页面文件。
+###model(模型)
+`$ rails g model comment commenter:string body:text post:references`
+
+###controller(控制器)
+`$ rails g controller comments`
+
+###创建控制器
+
+### 创建数据库
+
+## rake 用法
+### 生成数据库
+`rake db:create
+##

@@ -9,16 +9,16 @@ markdown: kramdown
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Aborn's Blog
+title : MoYuanMing 's Blog
 tagline: Site Tagline
-lasttime: 2014-03-23    # please modify before each push
+lasttime: 2014-11-23    # please modify before each push
 author :
-  name : Aborn Jiang 蒋国宝
-  email : aborn.jiang@foxmail.com
-  github : aborn
-  twitter : loveaborn
+  name : MoYuanMing
+  email : Mo_Yuan_Ming@126.com
+  github : MoYuanMing
+  twitter : MoYuanMing
 #  feedburner : feedname
-  csdn : loveaborn
+  #csdn : loveaborn
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -28,7 +28,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://aborn.github.io
+production_url : http://MoYuanMing.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
