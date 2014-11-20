@@ -9,7 +9,7 @@ markdown: kramdown
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : MoYuanMing 's Blog
+title : MoYuanMing
 tagline: Site Tagline
 lasttime: 2014-11-23    # please modify before each push
 author :
