@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 蒋国宝de博客
+title: MoYuanMing
 tagline: Supporting tagline
 ---
 {% include JB/setup %}

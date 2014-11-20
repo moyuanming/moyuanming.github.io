@@ -85,7 +85,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : abornblog
+      short_name : MYMBLOG
 #    livefyre :
 #      site_id : 123
 #    intensedebate :
