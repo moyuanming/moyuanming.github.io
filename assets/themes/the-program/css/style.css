@@ -28,7 +28,12 @@ audio:not([controls]) {
 [hidden] {
   display: none;
 }
-
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
 /*
 Base from [HTML5 Boilerplate](http://j.mp/rP0wmY)
 - Correct text resizing oddly in IE6/7 when body font-size is set using em units
