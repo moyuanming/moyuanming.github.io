@@ -1,10 +1,14 @@
 ---
 layout: post
-title:  "Test Sytnx"
-date:   Fri Nov 21 00:13:35 2014
-categories: [HTML]
+title:  "title""
+date:   date
+categories: html
 comments: true
 ---
+{% include JB/setup %}
+
+
+
 ~~~~~~~~javascript  
 $(function () {
     $('#container').highcharts({
