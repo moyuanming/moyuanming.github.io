@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "title""
-date:   date
+date:   Fri Nov 21 18:26:46 2014
 categories: html
 comments: true
 ---
