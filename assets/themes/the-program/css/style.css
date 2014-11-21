@@ -967,11 +967,11 @@ pre {
   .the-header .unit-head .nav-global li a,
   .the-header .unit-head .nav-global li div {
     display: block;
-    padding: 26px;
+    padding: 1px;
     height: 26px;
   }
   .the-header .unit-head .nav-global li a:hover {
-    background-color: #fff04a;
+    background-color: #dff8de;
     color: #474747;
   }
   .the-header .unit-head .nav-global li:nth-child(2) {
