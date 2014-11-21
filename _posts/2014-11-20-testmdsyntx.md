@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "title""
+title:  "Test Md Sytnax"
 date:   Fri Nov 21 18:26:46 2014
 categories: html
 comments: true
 ---
-{% include JB/setup %}
 
 
 
