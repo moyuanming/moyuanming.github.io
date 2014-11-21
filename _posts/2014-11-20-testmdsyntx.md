@@ -8,7 +8,7 @@ comments: true
 
 
 
-{% highlight html linenos %}
+~~~~~~~~html 
 
 $(function () {
     $('#container').highcharts({
@@ -31,7 +31,7 @@ $(function () {
     });
     }); 
 
-{% endhighlight %}
+~~~~~~~~
 
 
 
