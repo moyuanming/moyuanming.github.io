@@ -8,7 +8,8 @@ comments: true
 
 
 
-{% highlight javascript linenos %}
+{% highlight html linenos %}
+
 $(function () {
     $('#container').highcharts({
 
@@ -29,6 +30,7 @@ $(function () {
         }]
     });
     }); 
+
 {% endhighlight %}
 
 
