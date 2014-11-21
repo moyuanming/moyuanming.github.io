@@ -8,7 +8,7 @@ comments: true
 
 
 
-{% highlight javascirpt linenos %}
+{% highlight javascript linenos %}
 $(function () {
     $('#container').highcharts({
 
