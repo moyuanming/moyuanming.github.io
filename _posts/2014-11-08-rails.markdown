@@ -19,10 +19,53 @@ rails g scaffold post name:string title:string content:text
 `$ rails g controller comments`
 
 ###创建控制器
+数据迁移文件名和类名必须保持一致
+rails g RenameColToShowfino 
+会生成一个文件名为 XXX日期_rename_col_to_showfins.rb的文件
+也会生成一个 类 
 
+## 修改数据库字段
+~~~~~~~~ruby  
+class ModfiyColToQzbbs < ActiveRecord::Migration
+  def change
+      change_table :qzbbs do |t|      
+            t.change :sbsj ,:datetime
+            t.change :xbsj ,:datetime
+        end
+  end
+end 
+~~~~~~~~
+
+## 调试
+~~~~~~~~ruby  
+render plain: @var.inspect 
+~~~~~~~~
+
+## jquery 提交表单
+~~~~~~~~ruby  
+提交数据就一定得用表单么？
+<div contentEditable="true" id="page_content">
+<%= page_content %>
+</div>
+<script>
+//每隔三秒就自动保存修改
+setInterval(function () {
+   $.post({
+        content:$('#page_content').html(),
+        url:'/save-page-content/'
+  });
+},3000);
+
+</script> 
+~~~~~~~~
 ### 创建数据库
 
 ## rake 用法
 ### 生成数据库
 `rake db:create
-##
+
+## 创建静态页面 
+~~~~~~~~shell  
+rails generate controller StaticPages home help      
+~~~~~~~~
+
