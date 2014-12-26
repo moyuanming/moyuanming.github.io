@@ -23,6 +23,12 @@ rails g scaffold post name:string title:string content:text
 rails g RenameColToShowfino 
 会生成一个文件名为 XXX日期_rename_col_to_showfins.rb的文件
 也会生成一个 类 
+## 创建静态页面 
+
+~~~~~~~~html  
+rails generate controller StaticPages home help about 
+~~~~~~~~
+
 
 ## 修改数据库字段
 ~~~~~~~~ruby  
